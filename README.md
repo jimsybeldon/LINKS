@@ -2,7 +2,7 @@
 
 <img width="100%" src="https://i.ibb.co/BCPTFt0/overview-1.jpg" alt="overview">
 
-Here you will find the code we used to generate the dataset and simulate it. A reduced version of the dataset is also publicly available. To gain access to the full dataset send your request to us in the link provided below.
+Here you will find the code used to generate the dataset and simulate it.
 
 ## Required packages
 
@@ -13,30 +13,38 @@ Here you will find the code we used to generate the dataset and simulate it. A r
 - tqdm
 - svgpath2mpl
 
-
 ## Dataset
-A reduced dataset of 1,000,000 Mechanisms are provided publicly without any limits. If you are interested in recieving the complete 100,000,000 mechanisms please send your request in the link below:
 
-<a href="https://forms.gle/Xx8ZJiZGPjDPVBFu7">Full Dataset Request Form</a>
+The dataset is publicly available on Hugging Face: [ahn1376/LINKS-10M](https://huggingface.co/datasets/ahn1376/LINKS-10M)
 
 ### Dataset Description
 The dataset is provided in 4 files. The mechanisms in the "dataset" file, the numerical simulation data for each mechanism in the "simulation_dataset" file and the dataset of the normalized curves in the "normalized_dataset" file, and the curated normalized curves in the "curated_dataset" file.
 
-For more details on the structure of the data and use of our utilty functions see the jupyter notebook in the Dataset folder.
+For more details on the structure of the data and use of our utility functions see the jupyter notebook in the Dataset folder.
 
 ### Code Details
 The code provided here includes all the parts needed to open and simulate the mechanisms in the dataset. See Dataset.ipynb in the dataset folder for examples.
 
 Note that the GPU solvers are also included in the sim.py but not used directly in the code.
 
-### Webdemo And Project Page Coming September 8th
-Web demo and project webpage will go live September 8th, 2022.
-
-Project Webpage:
+### Project Page
 <a href="https://decode.mit.edu/projects/LINKS">Project Page</a>
 
-### More research on inverse kinematics coming soon! Keep an eye out:
+## Citation
 
-Sneak Peak:
-https://filebin.net/puxmtnqjsbvyuf6l/IBM_Final.mp4
+If you use this dataset, please cite:
 
+```bibtex
+@proceedings{10.1115/DETC2022-89798,
+    author = {Heyrani Nobari, Amin and Srivastava, Akash and Gutfreund, Dan and Ahmed, Faez},
+    title = {LINKS: A Dataset of a Hundred Million Planar Linkage Mechanisms for Data-Driven Kinematic Design},
+    volume = {Volume 3A: 48th Design Automation Conference (DAC)},
+    series = {International Design Engineering Technical Conferences and Computers and Information in Engineering Conference},
+    pages = {V03AT03A013},
+    year = {2022},
+    month = {08},
+    doi = {10.1115/DETC2022-89798},
+    url = {https://doi.org/10.1115/DETC2022-89798},
+    eprint = {https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-pdf/IDETC-CIE2022/86229/V03AT03A013/6943011/v03at03a013-detc2022-89798.pdf},
+}
+```
