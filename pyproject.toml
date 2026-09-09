@@ -1,0 +1,14 @@
+[project]
+name = "links"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.3",
+    "plotly>=7.0.0",
+    "pymoo==0.5.0",
+    "scikit-learn>=1.9.0",
+    "svgpath2mpl>=1.0.0",
+    "tensorflow>=2.21.0",
+    "tqdm>=4.70.0",
+]
