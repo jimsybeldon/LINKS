@@ -27,6 +27,8 @@ from utils import *
 
 normalizer_object = curve_normalizer()
 
+# Apply a global style before creating your plot
+plt.style.use('seaborn-v0_8')  # Alternative options: 'ggplot', 'fivethirtyeight', 'dark_background'
 
 def find_path(A, motor = [0,1], fixed_nodes=[0, 1]):
     
